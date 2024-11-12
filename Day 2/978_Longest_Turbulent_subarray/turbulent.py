@@ -8,7 +8,7 @@ class Solution:
         prev = ""
         while r < len(arr):
             if arr[r-1] > arr[r] and prev != ">":
-                res = max(res, r-l+1)
+                res = max(res, r-l+1) #(if l=0,r=1, length is 2)
                 r += 1
                 prev = ">"
             elif arr[r-1] < arr[r] and prev != "<":
